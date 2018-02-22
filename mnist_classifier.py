@@ -142,10 +142,6 @@ class mnist_network:
 			self.gradients.update({'dW'+str(j):dW})
 		return
 		
-	# This function learns parameters for the neural network and returns the model.
-	# - nn_hdim: Number of nodes in the hidden layer
-	# - num_epochs: Number of epochs
-	# - print_loss: If True, print the loss 10 epochs
 	def train_model(self, data, mini_batch_size=1 ,num_epochs=200, print_loss=False,visualize_wegiths_while_training=False):
 		# Initialize the parameters to random values. We need to learn these.
 		X = data['train']['X']
