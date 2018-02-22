@@ -232,7 +232,6 @@ def main():
 	#Initialize the network (number of layers, number of nodes in hidden layers etc.)
 	network = mnist_network(layers=layers, logging=True, hyper_params=parameters,activation_function=act_function)
 	network.visualize_weights('Weights before Training')# visualize initial weights
-	print('Close the weightss plot to start training')
 	
 	## train the network
 	model = network.train_model(data, mini_batch_size=parameters['mini_batch_size'], num_epochs=100, print_loss=True, visualize_wegiths_while_training=False)

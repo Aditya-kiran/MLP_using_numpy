@@ -20,7 +20,6 @@ def plot_logs(logs):
 	if n==1:
 		axarr=[axarr]
 	
-		axarr[i].plot(x, train_acc_array,color='r',label='train')
 	if 'accuracies' in logs.keys():	
 		axarr[i].plot(x, train_acc_array,color='r',label='train')
 		axarr[i].plot(x, valid_acc_array,color='b',label='valid')
